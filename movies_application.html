@@ -27,13 +27,18 @@
 
 <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand">CINEBAR</a>
+        <a class="navbar-brand">Movies</a>
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="searchB" type="submit">Search</button>
         </form>
     </div>
 </nav>
+<form class="example" action="action_page.php">
+    <input type="text" id="textbox" placeholder="Type in Movie" name="search">
+    <button type="submit" id="submitButton">Search</button>
+</form>
+
 <div id="container" class="container mt-5"></div>
 <div id="loader" class="text-center mt-5">Loading...</div>
 
