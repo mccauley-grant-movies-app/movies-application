@@ -19,6 +19,31 @@ fetch("http://localhost:3000/movies")
     })
     .catch(error => console.error(error));
 
+// function submitButton(input) {
+//     fetch("http://localhost:3000/movies")
+//         .then(response => response.json())
+//         .then(movies => {
+//document.getElementById('submitButton').addEventListener('click', function (e) {
+//     e.preventDefault();
+//     console.log("Clicked!")
+// })
+//         })
+// })}
+
+document.getElementById('submitButton').addEventListener('click', function (e) {
+    e.preventDefault();
+    console.log("Clicked!");
+
+    fetch("http://localhost:3000/movies")
+         .then(response => response.json())
+        .then(movies => {
+          console.log(movies);
+        })
+})
+
+
+
+
 
 
 
