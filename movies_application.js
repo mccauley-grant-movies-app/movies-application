@@ -32,14 +32,21 @@ fetch("http://localhost:3000/movies")
 
 document.getElementById('submitButton').addEventListener('click', function (e) {
     e.preventDefault();
-    console.log("Clicked!");
+
+    const titleInput = document.getElementById('textbox').value;
 
     fetch("http://localhost:3000/movies")
-         .then(response => response.json())
+        .then(response => response.json())
         .then(movies => {
-          console.log(movies);
+            console.log("Movies:", movies);
+            let filteredMovies = movies.filter(function(movie) {
+                return movie.title.toLowerCase().includes(titleInput.toLowerCase());
+            });
+            console.log("Filtered movies:", filteredMovies);
         })
-})
+        .catch(error => console.error(error));
+});
+
 
 
 
