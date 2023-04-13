@@ -5,35 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="movie_app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-   <style>
-        #loader {
-            border: 16px solid #f3f3f3; /* Light grey */
-            border-top: 16px solid #3498db; /* Blue */
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            animation: spin 2s linear infinite;
-        }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-
-<nav class="navbar bg-body-tertiary">
+<nav class="navbar">
     <div class="container-fluid">
-        <a class="navbar-brand">Movies</a>
-<!--        <form class="d-flex" role="search">-->
-<!--            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
-<!--            <button class="searchB" type="submit">Search</button>-->
-<!--        </form>-->
+        <a class="navbar-brand">Rotten Stars</a>
+
     </div>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
 </nav>
+
+<!--search-->
 <form class="example" action="action_page.php">
     <input type="text" id="searchBar" placeholder="Type in Movie" name="search">
     <button type="submit" id="submitButton">Search</button>
@@ -43,7 +34,7 @@
 
 <div id="container" class="container mt-5"></div>
 <div id="loader" class="text-center mt-5">Loading...</div>
-
+<!--//add a movie-->
 <div class="container mt-5">
     <h1>Add a Movie</h1>
     <form id="addMovieForm">
@@ -55,7 +46,7 @@
             <label for="rating">Movie Rating:</label>
             <input type="number" class="form-control" id="rating" min="1" max="10" required>
         </div>
-        <button type="submit" class="btn btn-primary">Add Movie</button>
+        <button type="submit" class="btn btn-primary" class="addColorButton">Add Movie</button>
     </form>
 </div>
 
@@ -68,6 +59,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script src="movies_application.js"></script>
+<script src="https://kit.fontawesome.com/a036573af0.js" crossorigin="anonymous"></script>
 
 </form></body>
 </html>
