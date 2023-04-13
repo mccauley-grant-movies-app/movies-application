@@ -1,16 +1,6 @@
 {
   "movies": [
     {
-      "id": 1,
-      "title": "Shrek",
-      "rating": 5
-    },
-    {
-      "id": 2,
-      "title": "Second Chance",
-      "rating": 5
-    },
-    {
       "id": 3,
       "title": "Annie",
       "rating": 5
@@ -26,9 +16,19 @@
       "id": 5
     },
     {
-      "title": "Toad who flies worms",
+      "title": "Avengers",
       "rating": "5",
-      "id": 6
+      "id": 7
+    },
+    {
+      "title": "Doctor Strange",
+      "rating": "4",
+      "id": 8
+    },
+    {
+      "title": "John Wick",
+      "rating": "5",
+      "id": 9
     }
   ]
 }

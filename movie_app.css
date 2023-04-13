@@ -12,11 +12,11 @@
     100% { transform: rotate(360deg); }
 }
 
-#container{
-    display:flex;
-    justify-content: space-evenly;
-    border-radius: 60px;
-}
+/*#container{*/
+/*    display:flex;*/
+/*    justify-content: space-evenly;*/
+/*    border-radius: 60px;*/
+/*}*/
 
 .navbar-brand {
     font-size: 100px;
@@ -75,4 +75,16 @@ body {
 }
 h1 {
     text-align: center;
+}
+
+.card {
+    width: 18rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+.card-container {
+    display:flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }

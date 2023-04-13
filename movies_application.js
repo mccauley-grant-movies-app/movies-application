@@ -8,7 +8,8 @@ function loadMovies() {
         .then(movies => {
             let htmlString = "";
             for (let movie of movies) {
-                htmlString += "<div class='card' style='width: 18rem'>";
+                htmlString += "<div class='container'>"
+                htmlString += "<div class='card' style='width: 18rem' class='scrolling-wrapper-flexbox'>";
                 htmlString += "<div class='card-body'>";
                 htmlString += " <h2 class='card-text' class='text'>" + `${movie.title}` + "</h2>";
                 htmlString += "<p class='card-text' class='text'>" + ` Movie Rating: ${movie.rating}` + "</p>";
@@ -17,7 +18,11 @@ function loadMovies() {
 
                 htmlString += "</div>";
                 htmlString += "</div>";
+                htmlString += "</div>";
+
             }
+            htmlString = "<div class='card-container'>" + htmlString + "</div>";
+
 
             document.getElementById("container").innerHTML = htmlString;
             document.getElementById("loader").style.display = "none";
@@ -81,6 +86,8 @@ document.getElementById('submitButton').addEventListener('click', function (e) {
                 htmlString += "</div>";
                 htmlString += "</div>";
             }
+            htmlString = "<div class='card-container'>" + htmlString + "</div>";
+
 
             document.getElementById("container").innerHTML = htmlString;
 
