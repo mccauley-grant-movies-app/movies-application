@@ -5,6 +5,9 @@
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
+    margin-left:auto;
+    margin-right:auto;
+
 }
 
 @keyframes spin {
@@ -27,11 +30,15 @@
 }
 .card {
     margin:10px;
-    border: 2px solid lightskyblue;
+    border: 2px solid saddlebrown;
     border-radius: 60px;
     text-align: center;
-    background-color: white;
-;
+    background-image: url("https://s3-us-west-2.amazonaws.com/prd-rteditorial/wp-content/uploads/2018/03/13153742/RT_300EssentialMovies_700X250.jpg");
+    color:white;
+    height:400px;
+    width:400px;
+    word-break: break-all;
+
 }
 
 .example{
@@ -46,8 +53,8 @@
     background-color: black;
 }
 *{
-    font-family: "Hiragino Mincho Pro";
-
+    font-family: "Malayalam MN";
+//cochin
 }
 .navbar{
 
@@ -86,5 +93,38 @@ h1 {
     display:flex;
     overflow-x: scroll;
     flex-wrap: nowrap;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
+}
+p{
+    margin-top:30px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 50px;
+}
+
+.delete-button, .edit-button {
+    margin-top:100px;
+}
+html, body {
+    width: 100%;
+    height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #592e22, #bd8825, #911317, #13285e);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
